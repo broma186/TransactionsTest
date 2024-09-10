@@ -1,5 +1,6 @@
 package com.example.kbandroidtechassessment.screen
 
+import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
@@ -109,9 +110,11 @@ fun TravelSavingsScreenContent(
                     fontSize = TextUnit(24f, TextUnitType.Sp),
                 )
             }
-            Row(modifier = Modifier.padding(16.dp),
-                verticalAlignment = Alignment.CenterVertically) {
-                Column {
+            Row(
+                modifier = Modifier.padding(16.dp),
+                verticalAlignment = Alignment.CenterVertically
+            ) {
+                Column(Modifier.padding(end = 16.dp)) {
                     Row {
                         Text(
                             text = "From Date: $fromDateStr",
@@ -127,18 +130,19 @@ fun TravelSavingsScreenContent(
                             fontSize = TextUnit(16f, TextUnitType.Sp)
                         )
                     }
+                }
                     Spacer(modifier = Modifier.height(16.dp))
-                }
-                Modifier.padding(32.dp)
-                Button({
-                    resetDateRange()
-                }) {
-                    Text(
-                        text = "RESET",
-                        fontWeight = FontWeight.W600,
-                        fontSize = TextUnit(16f, TextUnitType.Sp)
-                    )
-                }
+                    Button(
+                        onClick = {
+                            resetDateRange()
+                        }
+                    ) {
+                        Text(
+                            text = "RESET",
+                            fontWeight = FontWeight.W600,
+                            fontSize = TextUnit(16f, TextUnitType.Sp)
+                        )
+                    }
             }
             HorizontalDivider()
 

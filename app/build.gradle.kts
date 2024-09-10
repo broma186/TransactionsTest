@@ -80,4 +80,7 @@ dependencies {
     kapt(libs.com.google.dagger.hilt.android.compiler)
     kapt(libs.androidx.hilt.compiler)
     implementation(libs.androidx.hilt.navigation)
+
+    // Mockk
+    implementation(libs.io.mockk.mockk)
 }
