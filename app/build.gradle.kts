@@ -6,11 +6,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.kbandroidtechassessment"
+    namespace = "com.example.transactions"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.kbandroidtechassessment"
+        applicationId = "com.example.transactions"
         minSdk = 26
         targetSdk = 34
         versionCode = 1
@@ -47,6 +47,11 @@ android {
     packaging {
         resources {
             excludes += "/META-INF/{AL2.0,LGPL2.1}"
+            excludes += "META-INF/LICENSE.md"
+            excludes += "META-INF/LICENSE.txt"
+            excludes += "META-INF/NOTICE.md"
+            excludes += "META-INF/NOTICE.txt"
+            excludes += "META-INF/LICENSE-notice.md"
         }
     }
 }

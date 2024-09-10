@@ -19,5 +19,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "KBAndroidTechAssessment"
+rootProject.name = "Transactions"
 include(":app")
