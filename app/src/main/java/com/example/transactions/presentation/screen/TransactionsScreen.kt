@@ -1,4 +1,4 @@
-package com.example.transactions.screen
+package com.example.transactions.presentation.screen
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
@@ -7,7 +7,6 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.lazy.LazyColumn
-import androidx.compose.foundation.lazy.items
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.DateRange
 import androidx.compose.material3.Button
@@ -27,11 +26,11 @@ import androidx.compose.ui.unit.TextUnit
 import androidx.compose.ui.unit.TextUnitType
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.viewmodel.compose.viewModel
-import com.example.transactions.components.TransactionDateRangeFilter
-import com.example.transactions.components.TransactionItem
-import com.example.transactions.model.Transaction
-import com.example.transactions.ui.theme.TransactionsTheme
-import com.example.transactions.viewmodel.TransactionsViewModel
+import com.example.transactions.presentation.components.TransactionDateRangeFilter
+import com.example.transactions.presentation.components.TransactionItem
+import com.example.transactions.data.Transaction
+import com.example.transactions.theme.TransactionsTheme
+import com.example.transactions.presentation.viewmodel.TransactionsViewModel
 
 @Composable
 fun TravelSavingsScreen() {
@@ -146,7 +145,7 @@ fun TravelSavingsScreenContent(
             HorizontalDivider()
 
             LazyColumn {
-                items(transactions) { transaction ->
+                items(transactions.value) { transaction ->
                     TransactionItem(transaction = transaction)
                 }
             }

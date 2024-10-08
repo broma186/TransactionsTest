@@ -1,4 +1,4 @@
-package com.example.transactions.components
+package com.example.transactions.presentation.components
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
@@ -11,7 +11,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
-import com.example.transactions.model.Transaction
+import com.example.transactions.data.Transaction
 
 @Composable
 fun TransactionItem(transaction: Transaction) {

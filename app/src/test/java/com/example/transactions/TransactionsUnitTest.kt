@@ -1,10 +1,9 @@
 package com.example.transactions
 
-import com.example.transactions.model.Transaction
-import com.example.transactions.viewmodel.TransactionsViewModel
+import com.example.transactions.data.Transaction
+import com.example.transactions.presentation.viewmodel.TransactionsViewModel
 import io.mockk.MockKAnnotations
 import org.junit.Test
-
 import org.junit.Assert.*
 import org.junit.Before
 

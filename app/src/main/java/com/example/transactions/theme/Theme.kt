@@ -1,4 +1,4 @@
-package com.example.transactions.ui.theme
+package com.example.transactions.theme
 
 import android.os.Build
 import androidx.compose.foundation.isSystemInDarkTheme

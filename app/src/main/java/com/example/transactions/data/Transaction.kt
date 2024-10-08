@@ -1,4 +1,4 @@
-package com.example.transactions.model
+package com.example.transactions.data
 
 data class Transaction(
     val date: String,

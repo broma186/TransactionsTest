@@ -1,4 +1,4 @@
-package com.example.transactions.components
+package com.example.transactions.presentation.components
 
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
